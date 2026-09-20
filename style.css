@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     padding: 0px;
     margin: 0px;
@@ -173,4 +174,181 @@ main {
 
         background-color: var(--accent-color);
     }
+=======
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url(fonts/JETBRAINSMONONERDFONTMONO-REGULAR.TTF);
+}
+
+/* Estrutural */
+:root {
+    --border-radius: 5px;
+
+    /* Cores do Corpo */
+    --text-color: #fff;
+    --primary-color: #0b0b0c;
+    --accent-color: rgb(0, 88, 143);
+    --detail-color: #0072BB;
+
+    /* Cores da Navbar */
+    --navbar-color: #fff;
+    --navbar-hover-color: #beccca;
+    --navbar-active-color: #beccca;
+
+    /* Misc */
+    --transparent: rgba(0, 0, 0, 1);
+}
+
+body {
+    background-color: var(--primary-color) !important;
+    font-family: 'JetBrains Mono', monospace !important;
+    color: var(--text-color) !important;
+
+    height: 100%;
+
+    /* padding: 5px 30px; */
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    padding: 5px;
+}
+
+.main-theme {
+    background-color: var(--accent-color) !important;
+    border-radius: var(--border-radius) !important;
+    color: var(--text-color);
+
+    /* img {
+        border: 5px solid var(--detail-color);
+    } */
+}
+
+/* Reutilizavel */
+.content {
+    margin: 5px 15px;
+    padding: 15px;
+}
+
+
+/* Override */
+.custom-navbar {
+    --bs-navbar-color: var(--navbar-color) !important;
+    --bs-navbar-hover-color: var(--navbar-hover-color) !important;
+    --bs-navbar-active-color: var(--navbar-active-color) !important;
+}
+
+.dropdown-menu {
+    background-color: var(--primary-color);
+    border: 1px solid var(--accent-color);
+    border-radius: var(--border-radius);
+    padding: 0.5rem 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-6px);
+    transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s;
+    pointer-events: none;
+}
+
+.dropdown-menu.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.dropdown-item {
+    color: var(--text-color, #eee);
+    padding: 0.5rem 1.25rem;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: var(--accent-color);
+    color: var(--highlight-color, #fff);
+}
+
+.dropdown-divider {
+    border-top: 1px solid var(--accent-color);
+}
+
+/* Efeito Matrix */
+.matrix-container {
+    /* z-index: -10; */
+    /* position: absolute; */
+
+    z-index: -50;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#matrix {
+    z-index: -9;
+    width: 100%;
+    height: 100%;
+}
+
+/* Form */
+
+.custom-form {
+    input {
+        background-color: var(--primary-color);
+    }
+
+    small {
+        color: #c2c1c1 !important;
+    }
+
+    .btn {
+        background-color: var(--accent-color);
+    }
+
+    textarea {
+        background-color: var(--primary-color);
+        resize: none;
+    }
+
+    /* Placeholder */
+    ::-moz-placeholder {
+        color: #303030 !important;
+    }
+
+    ::-webkit-input-placeholder {
+        color: #303030 !important;
+    }
+}
+
+/* Responsividade (de nada célia) */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        position: absolute;
+        top: 110%;
+        left: 1rem;
+        right: 1rem;
+        padding: 1rem;
+        z-index: 1050;
+
+        border: 2px solid var(--primary-color);
+
+        background-color: var(--accent-color);
+    }
+>>>>>>> 2f849497d7ff3a96964af0820b5df49fef2c17f0
 }
