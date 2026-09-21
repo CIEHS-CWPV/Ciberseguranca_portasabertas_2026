@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Cibersegurança</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="icon" type="image/png" href="../img/logo.png">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -18,11 +18,12 @@
     <!-- Nav -->
     <nav class="navbar navbar-expand-lg custom-navbar">
         <div class="container-fluid ">
-            <a class="navbar-brand content main-theme" href="#" style="color: var(--text-color);">Cibersegurança</a>
+            <a class="navbar-brand content" href="#" style="color: var(--text-color);"><img src="../img/logo.png" width="50" height="50"></a>
+            <!-- <a class="navbar-brand content main-theme" href="#">Cibersegurança</a> -->
             <!-- <a class="navbar-brand content main-theme" href="#"><img src="img/logo.png"></a> -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span><img src="../img/hamb_menu.png"></span>
+                <span><img src="img/hamb_menu.png"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto my-4 my-lg-0 py-0 px-2" style="color: var(--text-color);">
@@ -31,8 +32,22 @@
                     <a class="nav-link" href="aplicacoes.html">Aplicações</a>
                     <a class="nav-link" href="ferramentas.html">Ferramentas</a>
                     <a class="nav-link" href="Bibliografia.html">Bibliografia</a>
-                    <a class="nav-link active" aria-current="page" href="Creditos.html">Créditos</a>
-                    <a class="nav-link" href="Contato.html">Contato</a>
+                    <!-- <a class="nav-link" href="Creditos.html">Créditos</a> -->
+
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <!-- <img src="img/lang_menu.png" height="30" width="30"> -->
+                            Créditos
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item active" href="Creditos.html">Desenvolvedores</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Orientadores</a>
+                        </div>
+                    </div>
+
+                    <a class="nav-link" aria-current="page" href="Contato.html">Contato</a>
                     <div class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -42,7 +57,7 @@
                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Português</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">English</a>
+                            <a class="dropdown-item" href="../index_ENG.html">English</a>
                         </div>
                     </div>
                 </div>
@@ -57,19 +72,18 @@
     </div>
 
     <main>
-        <div class="container my-5">
-            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 mb-2 align-items-center rounded-3 border shadow-lg">
-                <h1 class="text-center">Créditos</h1>
-
-                <ul class="list-group text-center">
-                    <li class="list-group-item">Isabella Pereira Delgado</li>
-                    <li class="list-group-item">Lucas Antonio Galante Molina</li>
-                    <li class="list-group-item">Lucas Lino Pereira</li>
-                    <li class="list-group-item">Lara Arruda Oliveira</li>
-                    <br>
-                </ul>
-            </div>
-        </div>
+        <h1 class="text-center">Créditos - Desenvolvedores</h1>
+            <div class=" p-4 pb-0 pe-lg-0 pt-lg-5 mb-2 align-items-center rounded-3 border shadow-lg">
+                <div class="col-lg-6 p-3 p-lg-5 pt-lg-3">
+                    <h2 class="text-center">Aqui estão o nome de cada desenvolvedor e colaborador na criação deste site</h2>
+                    <ul class="list-group list-group-flush p-4 pl-2 fs-5" style="display: inline-block;">
+                        <li class="list-group-item bg-transparent text-light">● Isabella Pereira Delgado </li>
+                        <li class="list-group-item bg-transparent text-light">● Lucas Antonio Galante Molina
+                        </li>
+                        <li class="list-group-item bg-transparent text-light">● Lucas Lino Pereira </li>
+                        <li class="list-group-item bg-transparent text-light">● Lara Arruda Oliveira </li>
+                    </ul>
+                </div>
     </main>
 
     <!-- Footer -->
